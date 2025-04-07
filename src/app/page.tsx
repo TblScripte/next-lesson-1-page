@@ -23,21 +23,21 @@ const Home = () => {
 				className='w-full h-[800px] bg-cover bg-center bg-no-repeat'
 				style={{ backgroundImage: `url(${img1.src})` }}
 			>
-				<div className='w-[85%] text-white flex justify-between pt-[40px] m-auto'>
+				<div className={`w-[85%] text-white flex justify-between pt-[40px] m-auto`}>
 					<h1>
-            <Link href={"/"}>Collections</Link>
-            Collections</h1>
+						<Link href={'/'}>Collections</Link>
+						Collections
+					</h1>
 					<h1>
-            <Link href={"products"}>Products</Link>
-            </h1>
+						<Link href={'products'}>Products</Link>
+					</h1>
 					<h1>
-            <Link href={"inspiration"}>Inspiration</Link>
-            </h1>
+						<Link href={'inspiration'}>Inspiration</Link>
+					</h1>
 					<h1>
-            <Link href={"about"}>Aboutus</Link>
-            </h1>
-					<h1>
-            Find a dealer</h1>
+						<Link href={'about'}>Aboutus</Link>
+					</h1>
+					<h1>Find a dealer</h1>
 				</div>
 				<div className='w-[85%] text-white flex justify-around m-auto mt-[7rem]'>
 					<h1 className='text-[6rem]'>Lasting</h1>
@@ -106,7 +106,7 @@ const Home = () => {
 					<Image src={img7} alt='' />
 				</div>
 			</div>
-			<div className='bg-white flex flex-wrap items-center justify-between'>
+			<div className={`bg-white flex flex-wrap items-center justify-between`}>
 				<div className='w-[50%] ml-[100px]'>
 					<h1 className='text-[6rem] font-normal mb-[30px]'>
 						Find a <br /> dealer
@@ -129,7 +129,7 @@ const Home = () => {
 					<Image src={img8} alt='' />
 				</div>
 			</div>
-			<div className='bg-[#20201F] flex items-center justify-between'>
+			<div className={`bg-[#20201F] flex items-center justify-between`}>
 				<Image src={img9} alt='' className='ml-[100px]' />
 				<div>
 					<h1 className='text-white text-[4rem] text-center '>
@@ -158,125 +158,212 @@ const Home = () => {
 					</button>
 				</div>
 			</div>
-      <div className='bg-[#F7F7F7] flex flex-wrap mt-[50px] items-center justify-between'>
-          <div>
-            <Image src={img12} alt=''/>
-          </div>
-          <div className='w-[50%] ml-[100px]'>
-            <h1 className='text-[6rem] font-normal mb-[30px]'>become  a <br /> dealer</h1>
-            <p className='text-[30px]'>Do you want to become a Joli retailer? Please <br />
-            submit the following form and we will <br />
-              contact you!</p>
-            
-            <button className='bg-transparent block border p-[10px_30px] rounded-full'>Search</button>
-          </div>
-        </div>
-        <Image alt='' src={img13}/>
-        <div className="min-h-screen flex flex-col font-sans">
-      <Head>
-        <title>Joli</title>
-        <meta name="description" content="Request our 2022 catalogue" />
-        <link href={"/products"} rel="icon"  />
-      </Head>
-      <div className="bg-[#E5E2DE] flex-1 flex items-center justify-center p-8">
-        <div className="text-center">
-          <h1 className="text-4xl font-light tracking-wider mb-4">Request our 2022 catalogue.</h1>
-          <div className="flex justify-center items-center space-x-4">
-            <input
-              type="email"
-              placeholder="email address *"
-              className="border border-gray-300 rounded px-4 py-2 w-64 focus:outline-none"
-            />
-            <button className="border border-gray-400 rounded px-6 py-2 hover:bg-gray-200 transition">
-              send
-            </button>
-          </div>
-          <div className="mt-4 flex items-center justify-center space-x-2">
-            <input type="checkbox" id="privacy" className="h-4 w-4" />
-            <label htmlFor="privacy" className="text-sm text-gray-600">
-              I agree with the{' '}
-              <a href="#" className="underline">
-                Privacy & Cookie Policy
-              </a>{' '}
-              of Joli
-            </label>
-          </div>
-        </div>
-      </div>
+			<div className='bg-[#F7F7F7] flex flex-wrap mt-[50px] items-center justify-between'>
+				<div>
+					<Image src={img12} alt='' />
+				</div>
+				<div className='w-[50%] ml-[100px]'>
+					<h1 className='text-[6rem] font-normal mb-[30px]'>
+						become a <br /> dealer
+					</h1>
+					<p className='text-[30px]'>
+						Do you want to become a Joli retailer? Please <br />
+						submit the following form and we will <br />
+						contact you!
+					</p>
 
-      <footer className="bg-[#20201F] text-white py-8 px-16">
-        <div className="grid grid-cols-5 gap-8">
-          <div>
-            <h2 className="text-2xl font-light tracking-widest">
-              <Image src={img14} alt='' />
-            </h2>
-          </div>
+					<button className='bg-transparent block border p-[10px_30px] rounded-full'>
+						Search
+					</button>
+				</div>
+			</div>
+			<Image alt='' src={img13} />
+			<div className='min-h-screen flex flex-col font-sans'>
+				<Head>
+					<title>Joli</title>
+					<meta name='description' content='Request our 2022 catalogue' />
+					<link href={'/products'} rel='icon' />
+				</Head>
+				<div className='bg-[#E5E2DE] flex-1 flex items-center justify-center p-8'>
+					<div className='text-center'>
+						<h1 className='text-4xl font-light tracking-wider mb-4'>
+							Request our 2022 catalogue.
+						</h1>
+						<div className='flex justify-center items-center space-x-4'>
+							<input
+								type='email'
+								placeholder='email address *'
+								className='border border-gray-300 rounded px-4 py-2 w-64 focus:outline-none'
+							/>
+							<button className='border border-gray-400 rounded px-6 py-2 hover:bg-gray-200 transition'>
+								send
+							</button>
+						</div>
+						<div className='mt-4 flex items-center justify-center space-x-2'>
+							<input type='checkbox' id='privacy' className='h-4 w-4' />
+							<label htmlFor='privacy' className='text-sm text-gray-600'>
+								I agree with the{' '}
+								<a href='#' className='underline'>
+									Privacy & Cookie Policy
+								</a>{' '}
+								of Joli
+							</label>
+						</div>
+					</div>
+				</div>
 
-          <div>
-            <h3 className=" text-[1.3rem] font-semibold mb-4">collections</h3>
-            <ul className="space-y-2 text-[2rem]">
-              <li><a href="#" className="hover:underline">Wire</a></li>
-              <li><a href="#" className="hover:underline">Curve</a></li>
-              <li><a href="#" className="hover:underline">Fizz</a></li>
-              <li><a href="#" className="hover:underline">Marguerite</a></li>
-            </ul>
-          </div>
+				<footer className='bg-[#20201F] text-white py-8 px-16'>
+					<div className='grid grid-cols-5 gap-8'>
+						<div>
+							<h2 className='text-2xl font-light tracking-widest'>
+								<Image src={img14} alt='' />
+							</h2>
+						</div>
 
-          <div>
-            <h3 className=" text-[1.3rem] font-semibold mb-4">products</h3>
-            <ul className="space-y-2 text-[2rem]">
-              <li><a href="#" className="hover:underline">Tables</a></li>
-              <li><a href="#" className="hover:underline">Chairs</a></li>
-              <li><a href="#" className="hover:underline">Cabinets</a></li>
-              <li><a href="#" className="hover:underline">Accessories</a></li>
-            </ul>
-          </div>
+						<div>
+							<h3 className=' text-[1.3rem] font-semibold mb-4'>collections</h3>
+							<ul className='space-y-2 text-[2rem]'>
+								<li>
+									<a href='#' className='hover:underline'>
+										Wire
+									</a>
+								</li>
+								<li>
+									<a href='#' className='hover:underline'>
+										Curve
+									</a>
+								</li>
+								<li>
+									<a href='#' className='hover:underline'>
+										Fizz
+									</a>
+								</li>
+								<li>
+									<a href='#' className='hover:underline'>
+										Marguerite
+									</a>
+								</li>
+							</ul>
+						</div>
 
-          <div>
-            <h3 className=" text-[1.3rem] font-semibold mb-4">inspiration</h3>
-            <ul className="space-y-2 text-[2rem]">
-              <li><a href="#" className="hover:underline">Joli Days</a></li>
-              <li><a href="#" className="hover:underline">2022</a></li>
-              <li><a href="#" className="hover:underline">Terrace</a></li>
-              <li><a href="#" className="hover:underline">Ceremonies & Meetings</a></li>
-            </ul>
-          </div>
+						<div>
+							<h3 className=' text-[1.3rem] font-semibold mb-4'>products</h3>
+							<ul className='space-y-2 text-[2rem]'>
+								<li>
+									<a href='#' className='hover:underline'>
+										Tables
+									</a>
+								</li>
+								<li>
+									<a href='#' className='hover:underline'>
+										Chairs
+									</a>
+								</li>
+								<li>
+									<a href='#' className='hover:underline'>
+										Cabinets
+									</a>
+								</li>
+								<li>
+									<a href='#' className='hover:underline'>
+										Accessories
+									</a>
+								</li>
+							</ul>
+						</div>
 
-          <div>
-            <h3 className=" text-[1.3rem] font-semibold mb-4">about us</h3>
-            <ul className="space-y-2 text-[2rem]">
-              <li><a href="#" className="hover:underline">Materials</a></li>
-              <li><a href="#" className="hover:underline">Find a dealer</a></li>
-              <li><a href="#" className="hover:underline">Professionals</a></li>
-              <li><a href="#" className="hover:underline">News</a></li>
-            </ul>
+						<div>
+							<h3 className=' text-[1.3rem] font-semibold mb-4'>inspiration</h3>
+							<ul className='space-y-2 text-[2rem]'>
+								<li>
+									<a href='#' className='hover:underline'>
+										Joli Days
+									</a>
+								</li>
+								<li>
+									<a href='#' className='hover:underline'>
+										2022
+									</a>
+								</li>
+								<li>
+									<a href='#' className='hover:underline'>
+										Terrace
+									</a>
+								</li>
+								<li>
+									<a href='#' className='hover:underline'>
+										Ceremonies & Meetings
+									</a>
+								</li>
+							</ul>
+						</div>
 
-            <h3 className="uppercase text-sm font-semibold mt-6 mb-4">contact</h3>
-            <ul className="space-y-2 text-sm">
-              <li>Industrielaan 5</li>
-              <li>8520 Kortrijk</li>
-              <li><a href="mailto:info@joli.be" className="hover:underline">info@joli.be</a></li>
-            </ul>
-          </div>
-        </div>
+						<div>
+							<h3 className=' text-[1.3rem] font-semibold mb-4'>about us</h3>
+							<ul className='space-y-2 text-[2rem]'>
+								<li>
+									<a href='#' className='hover:underline'>
+										Materials
+									</a>
+								</li>
+								<li>
+									<a href='#' className='hover:underline'>
+										Find a dealer
+									</a>
+								</li>
+								<li>
+									<a href='#' className='hover:underline'>
+										Professionals
+									</a>
+								</li>
+								<li>
+									<a href='#' className='hover:underline'>
+										News
+									</a>
+								</li>
+							</ul>
 
-        <div className="mt-8 flex justify-between items-center text-sm">
-          <div className="space-x-4">
-            <a href="#" className="underline">Privacy & Cookie Policy</a>
-            <a href="#" className="underline">Disclaimer</a>
-          </div>
-          <div className="flex items-center space-x-4">
-            <span>made by skin</span>
-            <div className="flex space-x-2">
-              <a href="#" className="text-xl">f</a>
-              <a href="#" className="text-xl">in</a>
-              <a href="#" className="text-xl">p</a>
-            </div>
-          </div>
-        </div>
+							<h3 className='uppercase text-sm font-semibold mt-6 mb-4'>
+								contact
+							</h3>
+							<ul className='space-y-2 text-sm'>
+								<li>Industrielaan 5</li>
+								<li>8520 Kortrijk</li>
+								<li>
+									<a href='mailto:info@joli.be' className='hover:underline'>
+										info@joli.be
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
 
-      </footer>
-    </div>
+					<div className='mt-8 flex justify-between items-center text-sm'>
+						<div className='space-x-4'>
+							<a href='#' className='underline'>
+								Privacy & Cookie Policy
+							</a>
+							<a href='#' className='underline'>
+								Disclaimer
+							</a>
+						</div>
+						<div className='flex items-center space-x-4'>
+							<span>made by skin</span>
+							<div className='flex space-x-2'>
+								<a href='#' className='text-xl'>
+									f
+								</a>
+								<a href='#' className='text-xl'>
+									in
+								</a>
+								<a href='#' className='text-xl'>
+									p
+								</a>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
 		</>
 	)
 }
