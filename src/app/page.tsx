@@ -141,7 +141,7 @@ const Home = () => {
 					</button>
 				</div>
 				<div className='w-[40%]'>
-					<Image src={img10} alt='' className='ml-[50%]' />
+					<Image src={img10} alt='' className='ml-[200px]' />
 					<Image src={img11} alt='' className='mt-[30px]' />
 				</div>
 			</div>
