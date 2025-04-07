@@ -70,7 +70,7 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
-			<div className='bg-[#E5E2DE] h-[130vh]'>
+			<div className='bg-[#E5E2DE] h-[140vh]'>
 				<div className='w-[90%] m-auto justify-between flex items-center'>
 					<div className=' pt-[5rem]'>
 						<h1 className='text-[5rem] font-normal'>
@@ -106,7 +106,7 @@ const Home = () => {
 					<Image src={img7} alt='' />
 				</div>
 			</div>
-			<div className='bg-white   flex flex-wrap items-center justify-between'>
+			<div className='bg-white flex flex-wrap items-center justify-between'>
 				<div className='w-[50%] ml-[100px]'>
 					<h1 className='text-[6rem] font-normal mb-[30px]'>
 						Find a <br /> dealer
